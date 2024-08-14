@@ -1,5 +1,5 @@
 import { Link} from "react-router-dom";
-import Error from "../../../src/assets/images/electronic-slider-1"
+import Error from "../../../src/assets/images/404-error-page-svg-animation.gif"
 
 
 const ErrorPage = () => {
