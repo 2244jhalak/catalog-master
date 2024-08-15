@@ -1,0 +1,45 @@
+/* সাধারণ স্লাইডার স্টাইলস */
+.mySwiper {
+    width: 100%;
+    height: 500px;
+  }
+  
+  /* টেক্সট অ্যানিমেশন স্টাইলস */
+  .slide-text {
+    position: absolute;
+    bottom: 20px; /* প্রয়োজন অনুযায়ী অবস্থান সমন্বয় করুন */
+    left: 20px; /* প্রয়োজন অনুযায়ী অবস্থান সমন্বয় করুন */
+    color: #fff; /* টেক্সটের রঙ সাদা */
+    font-size: 2rem; /* টেক্সটের আকার */
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* অ্যানিমেশন ক্লাস */
+  .fade-in {
+    opacity: 1;
+    animation: fadeIn 1s forwards;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    animation: fadeOut 1s forwards;
+  }
+  
+  /* অ্যানিমেশন কীফ্রেমস */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
