@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
+import { FaUserAlt, FaUserAltSlash } from "react-icons/fa";
 
 
 const Navbar = () => {
@@ -42,14 +43,14 @@ const Navbar = () => {
                 {/* Mobile Menu */}
                 <div className={`${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'} absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-blue-950 dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:opacity-100 md:translate-x-0 md:flex md:items-center md:justify-between`}>
                     <div className="flex items-center flex-col px-2 -mx-4 md:flex-row md:mx-10 md:py-0">
-                        <a href="#" className="px-2.5 py-2 text-white transition-colors duration-300 transform rounded-lg hover:text-gray-500 md:mx-2">Home</a>
+                        <a href="/" className="px-2.5 py-2 text-white transition-colors duration-300 transform rounded-lg hover:text-gray-500 md:mx-2">Home</a>
                         <a href="#" className="px-2.5 py-2 text-white transition-colors duration-300 transform rounded-lg hover:text-gray-500 md:mx-2">About</a>
                         <a href="#" className="px-2.5 py-2 text-white transition-colors duration-300 transform rounded-lg hover:text-gray-500 md:mx-2">Contact</a>
                         {
                             user ?
-                            <Link className="px-5 text-white transition-colors duration-300 transform rounded-lg hover:bg-blue-800 md:mx-2 border-0 btn btn-outline" onClick={logOutUser}>Logout</Link>
+                            <Link className="px-5 text-white transition-colors duration-300 transform rounded-lg hover:bg-blue-800 md:mx-2 border-0 btn btn-outline" onClick={logOutUser}><FaUserAltSlash></FaUserAltSlash>Logout</Link>
                             :
-                            <Link className="px-5 text-white transition-colors duration-300 transform rounded-lg hover:bg-blue-800 md:mx-2 border-0 btn btn-primary" to="/login">Login</Link>
+                            <Link className="px-5 text-white transition-colors duration-300 transform rounded-lg hover:bg-blue-800 md:mx-2 border-0 btn btn-primary" to="/login"><FaUserAlt></FaUserAlt>Login</Link>
 
                         }
                         
