@@ -1,6 +1,6 @@
-# Catalog_Master
+# Catalog Master
 
-**Catalog_Master** is a web application for browsing and managing electronic products. It provides features for viewing product details, filtering, searching, sorting, and pagination.
+**Catalog Master** is a web application for browsing and managing electronic products. It provides features for viewing product details, filtering, searching, sorting, and pagination.
 
 ## Overview
 
@@ -27,5 +27,5 @@
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/catalog_master.git
+https://github.com/2244jhalak/catalog-master.git
 
