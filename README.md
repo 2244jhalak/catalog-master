@@ -4,7 +4,6 @@
 
 ## Overview
 
-- **Browse Products**: See prices, ratings, and images.
 - **Filter**: By brand, category, and price range.
 - **Search**: By product name.
 - **Sort**: By price (low to high, high to low) and date added (newest first).
@@ -12,8 +11,7 @@
 
 ## Features
 
-- Product display with price, rating, and image
-- Filter by brand, category, and price
+- Filter by brand name, category, and price range
 - Search by product name
 - Sorting options
 - Pagination
@@ -30,4 +28,4 @@
 
 ```bash
 git clone https://github.com/yourusername/catalog_master.git
-cd catalog_master
+
